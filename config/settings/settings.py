@@ -144,6 +144,8 @@ STATIC_URL = '/static/'
 # common static dirs
 STATICFILES_DIRS = [os.path.join(BASE_DIR, 'static')]
 
+# collect static dirs
+STATIC_ROOT = env.str('STATIC_ROOT')
 
 # dev
 from .settings_dev import *
@@ -154,3 +156,5 @@ from .settings_allauth import *
 # common
 from .settings_common import *
 
+# asw setting
+from .settings_aws import *
